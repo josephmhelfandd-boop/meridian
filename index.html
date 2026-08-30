@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian Federal | Sign On</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="login-page">
+  <header class="site-header">
+    <div class="topbar">
+      <a class="brand" href="index.html" aria-label="Meridian Federal home">
+        <img src="assets/logo.svg" alt="Meridian Federal" />
+      </a>
+      <nav class="utility-nav" aria-label="Utility navigation">
+        <a href="#">Customer Service</a>
+        <a href="#">Locations</a>
+        <a href="#">Español</a>
+        <form class="search-box" onsubmit="return false">
+          <input type="search" placeholder="Search" aria-label="Search" />
+          <button type="submit" aria-label="Submit search">⌕</button>
+        </form>
+      </nav>
+    </div>
+    <div class="gold-line"></div>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#">Personal</a>
+      <a href="#">Investing & Wealth</a>
+      <a href="#">Small Business</a>
+      <a href="#">Commercial Banking</a>
+      <a href="#">About Meridian</a>
+    </nav>
+  </header>
+
+  <main class="hero-login">
+    <section class="login-card" aria-labelledby="sign-on-heading">
+      <h1 id="sign-on-heading">Sign On</h1>
+      <p class="subtitle">to view your accounts</p>
+
+      <form id="loginForm" novalidate>
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" />
+
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input id="password" name="password" type="password" autocomplete="current-password" />
+          <button id="togglePassword" type="button" class="show-btn">Show</button>
+        </div>
+
+        <label class="remember-row">
+          <input type="checkbox" />
+          <span>Save username</span>
+        </label>
+
+        <p id="loginError" class="login-error" role="alert" aria-live="polite"></p>
+        <button class="primary-btn" type="submit">Sign On</button>
+      </form>
+
+      <div class="login-links">
+        <a href="#">Forgot username or password?</a>
+        <a href="#">Enroll Now</a>
+      </div>
+    </section>
+  </main>
+
+  <section class="help-strip">
+    <div>
+      <h2>Contact Us</h2>
+      <a href="#">Find phone numbers and hours</a>
+    </div>
+    <div>
+      <h2>Security Center</h2>
+      <a href="#">Privacy, fraud prevention and safety</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Privacy, Cookies, Security & Legal</a>
+      <a href="#">Report Fraud</a>
+      <a href="#">Accessibility</a>
+      <a href="#">Sitemap</a>
+    </div>
+    <p>© 2026 Meridian Federal. All rights reserved.</p>
+    <p class="fictional-note">..</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

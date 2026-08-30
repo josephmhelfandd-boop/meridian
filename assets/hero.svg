@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="700" viewBox="0 0 1600 700">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7f99aa"/>
+      <stop offset="0.58" stop-color="#d5c0a2"/>
+      <stop offset="1" stop-color="#75685c"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#596773"/>
+      <stop offset="1" stop-color="#2e3942"/>
+    </linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <rect width="1600" height="700" fill="url(#sky)"/>
+  <g opacity=".25" filter="url(#soft)">
+    <ellipse cx="1270" cy="130" rx="230" ry="38" fill="#fff"/>
+    <ellipse cx="900" cy="88" rx="180" ry="28" fill="#fff"/>
+  </g>
+  <g transform="translate(520 115)">
+    <rect x="80" y="90" width="130" height="385" fill="#4c555c"/>
+    <rect x="225" y="25" width="190" height="450" fill="url(#glass)"/>
+    <rect x="435" y="140" width="120" height="335" fill="#5b6268"/>
+    <rect x="575" y="60" width="145" height="415" fill="#404c56"/>
+    <rect x="742" y="165" width="120" height="310" fill="#676d71"/>
+    <rect x="885" y="105" width="180" height="370" fill="#3e4951"/>
+    <rect x="1090" y="195" width="115" height="280" fill="#60666a"/>
+    <g stroke="#8fa0aa" stroke-width="4" opacity=".55">
+      <path d="M247 45 V455 M277 45 V455 M307 45 V455 M337 45 V455 M367 45 V455 M397 45 V455"/>
+      <path d="M600 80 V455 M635 80 V455 M670 80 V455"/>
+      <path d="M920 125 V455 M960 125 V455 M1000 125 V455 M1040 125 V455"/>
+    </g>
+    <g fill="#d9c784" opacity=".5">
+      <rect x="100" y="125" width="18" height="10"/><rect x="130" y="125" width="18" height="10"/><rect x="160" y="125" width="18" height="10"/>
+      <rect x="100" y="158" width="18" height="10"/><rect x="160" y="158" width="18" height="10"/>
+      <rect x="460" y="190" width="18" height="10"/><rect x="490" y="190" width="18" height="10"/>
+      <rect x="770" y="215" width="18" height="10"/><rect x="810" y="215" width="18" height="10"/>
+    </g>
+  </g>
+  <rect y="590" width="1600" height="110" fill="#342f2d" opacity=".7"/>
+  <g opacity=".65" fill="#1f2528"><rect x="0" y="520" width="210" height="110"/><rect x="240" y="555" width="190" height="75"/></g>
+</svg>

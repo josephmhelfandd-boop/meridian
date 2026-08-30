@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian Federal | Account Summary</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-page">
+  <header class="site-header dashboard-header">
+    <div class="topbar">
+      <a class="brand" href="dashboard.html"><img src="assets/logo.svg" alt="Meridian Federal" /></a>
+      <nav class="utility-nav">
+        <a href="#">Customer Service</a>
+        <a href="#">Messages</a>
+        <a href="#">Profile</a>
+        <a href="index.html" id="signOff">Sign Off</a>
+      </nav>
+    </div>
+    <div class="gold-line"></div>
+    <nav class="main-nav dashboard-nav">
+      <a class="active" href="#">Accounts</a>
+      <a href="transfer-pay.html">Transfer & Pay</a>
+      <a href="#">Brokerage</a>
+      <a href="#">Security & Support</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-shell">
+    <section class="dashboard-main">
+      <div class="page-title-row">
+        <div>
+          <h1>Account Summary</h1>
+          <p>Balances and account information</p>
+        </div>
+        <button class="print-btn" type="button">Print</button>
+      </div>
+
+      <article class="account-card expanded">
+        <div class="account-head">
+          <div>
+            <h2>Everyday Checking</h2>
+            <p>...4821</p>
+          </div>
+          <div class="balance-block">
+            <span>Available balance</span>
+            <strong>$1,387,840.62</strong>
+          </div>
+        </div>
+        <div class="account-actions">
+          <a href="#">View Activity</a>
+          <a href="transfer-pay.html?tab=transfer">Transfer Money</a>
+          <a href="transfer-pay.html?tab=pay">Pay Bills</a>
+          <a href="#">Statements & Documents</a>
+        </div>
+        <div class="activity-table-wrap">
+          <table class="activity-table">
+            <thead>
+              <tr><th>Date</th><th>Description</th><th>Amount</th><th>Balance</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Jul 16</td><td>INT WIRE TRSF RE: EST-2026-8812-PROB..</td><td class="positive">+$1,320,800.00</td><td>$1,387,840.62</td></tr>
+              <tr><td>Jul 15</td><td>ADMIN CREDIT/MISC LEGAL OFFSET</td><td class="positive">+$67,000.00</td><td>$67,040.62</td></tr>
+              <tr><td>Jul 14</td><td>ACCOUNT REACTIVATION/UNCLAIMED BAL</td><td>-$40.62</td><td>$40.62</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="account-card">
+        <div class="account-head">
+          <div><h2>Premier Savings</h2><p>...9037</p></div>
+          <div class="balance-block"><span>Available balance</span><strong>$2,540.18</strong></div>
+        </div>
+        <div class="account-actions"><a href="#">View Activity</a><a href="transfer-pay.html?tab=transfer">Transfer Money</a><a href="#">Statements & Documents</a></div>
+      </article>
+
+      <article class="account-card">
+        <div class="account-head">
+          <div><h2>Meridian Platinum Card</h2><p>...7714</p></div>
+          <div class="balance-block"><span>Current balance</span><strong>$284.15</strong><small>Available credit $715.85</small></div>
+        </div>
+        <div class="account-actions"><a href="#">View Activity</a><a href="transfer-pay.html?tab=pay">Make a Payment</a><a href="#">Statements & Documents</a></div>
+      </article>
+
+      <article class="account-card">
+        <div class="account-head">
+          <div><h2>Home Mortgage</h2><p>...1448</p></div>
+          <div class="balance-block"><span>Principal balance</span><strong>$98,806.43</strong><small>Next payment Aug 1</small></div>
+        </div>
+        <div class="account-actions"><a href="#">View Details</a><a href="transfer-pay.html?tab=pay">Make a Payment</a><a href="#">Statements & Documents</a></div>
+      </article>
+    </section>
+
+    <aside class="profile-panel">
+      <div class="welcome-box">
+        <h2>Welcome, Grace</h2>
+        <p id="lastSignOn">Last Sign In</p>
+      </div>
+      <div class="side-section">
+        <h3>Messages & Alerts</h3>
+        <a href="#">Secure messages <span>2</span></a>
+        <a href="#">Account alerts</a>
+      </div>
+      <div class="side-section">
+        <h3>Quick Links</h3>
+        <a href="#">Deposit Checks</a>
+        <a href="#">Order Checks</a>
+        <a href="#">Manage Debit Card</a>
+        <a href="#">Tax Documents</a>
+      </div>
+      <div class="side-section rewards">
+        <h3>Meridian Rewards</h3>
+        <strong>18,420 points</strong>
+        <a href="#">View rewards</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer dashboard-footer">
+    <div class="footer-links">
+      <a href="#">Privacy</a><a href="#">Security</a><a href="#">Legal</a><a href="#">Contact Us</a>
+    </div>
+    <p>© 2026 Meridian Federal. All rights reserved.</p>
+    <p class="fictional-note">..</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

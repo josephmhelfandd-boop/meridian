@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="125" viewBox="0 0 540 125" role="img" aria-label="Meridian Federal">
+  <rect width="540" height="125" fill="white"/>
+  <g transform="translate(10 17)">
+    <path d="M40 0 L80 18 L80 49 C80 72 64 87 40 96 C16 87 0 72 0 49 L0 18 Z" fill="#b5162d"/>
+    <path d="M15 29 H65 V38 H15 Z M20 45 H60 V54 H20 Z M25 61 H55 V70 H25 Z" fill="#d5aa46"/>
+    <circle cx="40" cy="18" r="8" fill="#d5aa46"/>
+  </g>
+  <text x="112" y="59" font-family="Georgia, serif" font-size="39" fill="#b5162d">MERIDIAN</text>
+  <text x="114" y="89" font-family="Arial, sans-serif" font-size="19" letter-spacing="7" fill="#6d5a40">FEDERAL</text>
+</svg>

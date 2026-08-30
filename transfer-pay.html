@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meridian Federal | Transfer & Pay</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-page">
+  <header class="site-header dashboard-header">
+    <div class="topbar">
+      <a class="brand" href="dashboard.html"><img src="assets/logo.svg" alt="Meridian Federal" /></a>
+      <nav class="utility-nav">
+        <a href="#">Customer Service</a>
+        <a href="#">Messages</a>
+        <a href="#">Profile</a>
+        <a href="index.html">Sign Off</a>
+      </nav>
+    </div>
+    <div class="gold-line"></div>
+    <nav class="main-nav dashboard-nav">
+      <a href="dashboard.html">Accounts</a>
+      <a class="active" href="transfer-pay.html">Transfer & Pay</a>
+      <a href="#">Brokerage</a>
+      <a href="#">Security & Support</a>
+    </nav>
+  </header>
+
+  <main class="dashboard-shell transfer-shell">
+    <section class="dashboard-main">
+      <div class="page-title-row">
+        <div>
+          <h1>Transfer & Pay</h1>
+          <p>Move money between accounts or make a payment</p>
+        </div>
+      </div>
+
+      <div class="transfer-tabs" role="tablist" aria-label="Transfer and payment options">
+        <button class="transfer-tab active" type="button" data-tab="transfer">Transfer Money</button>
+        <button class="transfer-tab" type="button" data-tab="pay">Pay Bills</button>
+      </div>
+
+      <section class="transfer-panel active" id="transferPanel">
+        <h2>Transfer Money</h2>
+        <p class="panel-intro">Choose the accounts and amount for this transfer.</p>
+        <div class="transfer-form-grid">
+          <label>From account
+            <select id="transferFrom">
+              <option>Everyday Checking ...4821 — $1,387,840.62</option>
+              <option>Premier Savings ...9037 — $2,540.18</option>
+            </select>
+          </label>
+          <label>To account
+            <select id="transferTo">
+              <option>Premier Savings ...9037</option>
+              <option>Everyday Checking ...4821</option>
+              <option>Meridian Platinum Card ...7714</option>
+            </select>
+          </label>
+          <label>Amount
+            <div class="money-input"><span>$</span><input id="transferAmount" inputmode="decimal" placeholder="0.00" /></div>
+          </label>
+          <label>Transfer date
+            <input id="transferDate" type="date" />
+          </label>
+          <label class="full-row">Memo (optional)
+            <input id="transferMemo" type="text" maxlength="60" placeholder="Add a note" />
+          </label>
+        </div>
+        <div class="restriction-message" id="transferRestriction" role="alert" aria-live="polite"></div>
+        <div class="form-actions">
+          <button class="primary-btn transfer-primary" id="continueTransfer" type="button">Continue</button>
+          <a href="dashboard.html">Cancel</a>
+        </div>
+      </section>
+
+      <section class="transfer-panel" id="payPanel">
+        <h2>Pay Bills</h2>
+        <p class="panel-intro">Select a payee and payment amount.</p>
+        <div class="transfer-form-grid">
+          <label>Pay from
+            <select id="payFrom">
+              <option>Everyday Checking ...4821 — $48,275.62</option>
+              <option>Premier Savings ...9037 — $126,540.18</option>
+            </select>
+          </label>
+          <label>Payee
+            <select id="payee">
+              <option>Meridian Platinum Card ...7714</option>
+              <option>Home Mortgage ...1448</option>
+            </select>
+          </label>
+          <label>Amount
+            <div class="money-input"><span>$</span><input id="paymentAmount" inputmode="decimal" placeholder="0.00" /></div>
+          </label>
+          <label>Payment date
+            <input id="paymentDate" type="date" />
+          </label>
+        </div>
+        <div class="restriction-message" id="paymentRestriction" role="alert" aria-live="polite"></div>
+        <div class="form-actions">
+          <button class="primary-btn transfer-primary" id="continuePayment" type="button">Continue</button>
+          <a href="dashboard.html">Cancel</a>
+        </div>
+      </section>
+    </section>
+
+    <aside class="profile-panel">
+      <div class="welcome-box">
+        <h2>Welcome, Grace</h2>
+        <p id="lastSignOn">Last Sign In</p>
+      </div>
+      <div class="side-section">
+        <h3>Transfer & Pay</h3>
+        <a href="transfer-pay.html?tab=transfer">Transfer Money</a>
+        <a href="transfer-pay.html?tab=pay">Pay Bills</a>
+      </div>
+      <div class="side-section">
+        <h3>Quick Links</h3>
+        <a href="dashboard.html">Account Summary</a>
+        <a href="#">Statements & Documents</a>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer dashboard-footer">
+    <div class="footer-links">
+      <a href="#">Privacy</a><a href="#">Security</a><a href="#">Legal</a><a href="#">Contact Us</a>
+    </div>
+    <p>© 2026 Meridian Federal. All rights reserved.</p>
+    <p class="fictional-note">..</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
